@@ -1,53 +1,42 @@
-# Eloquent JavaScript
+# Mahir JavaScript
 
-These are the sources used to build the third edition of Eloquent
-JavaScript (https://eloquentjavascript.net).
+Ini adalah sumber yang digunakan untuk menyusun edisi ketiga Mahir
+Javascript  (https://mahirjavascript.net).
 
-Feedback welcome, in the form of issues and pull requests.
+Kami menyambut masukan dalam bentuk issue dan pull request. 
 
-## Building
+## Cara Menyusun
 
-This builds the HTML output in `html/`, where `make` is GNU make:
+Perintah ini menyusun keluaran HTML di direktori `html/`, sedangkan 
+`make` adalah perintah make dari GNU:
 
     npm install
     make html
 
-To build the PDF file (don't bother trying this unless you really need
-it, since this list has probably bitrotted again and getting all this
-set up is a pain):
+Untuk menyusun berkas PDF (anda tidak perlu melakukan hal ini kecuali 
+anda sangat memerlukannya, karena daftar ini akan kadaluarsa dan prosesnya
+sangatlah sulit):
 
     apt-get install texlive texlive-xetex fonts-inconsolata fonts-symbola texlive-lang-chinese inkscape
     make book.pdf
 
-## Translating
+## Penerjemahan
 
-Translations are very much welcome. The license this book is published
-under allows non-commercial derivations, which includes open
-translations. If you do one, let me know, and I'll add a link to the
-website.
+Kami sangat menyambut pihak yang ingin menerjemahkan naskah ini. Lisensi
+buku ini mengizinkan turunan tak komersial, termasuk terjemahan terbuka.
+Jika anda memiliki rencana untuk melakukannya, mohon kabari saya, sehingga
+saya bisa menambahkan tautan ke situs.
 
-A note of caution though: This text consists of about 130 000 words,
-the paper book is 400 pages. That's a lot of text, which will take a
-lot of time to translate.
+Tetapi, saya ingin memperingatkan: tulisan ini terdiri dari 130000
+kata, sementara buku kertasnya terdiri dari 400 halaman. Teks yang
+cukup banyak dan membutuhkan waktu yang lama untuk diterjemahkan.
 
-If that doesn't scare you off, the recommended way to go about a
-translation is:
+Jika peringatan itu tidak membuat anda takut, cara terbaik untuk
+memulai terjemahan adalah:
 
- - Fork this repository on GitHub.
+- Cabangkan repositori ini di Github.
+- Buat sebuah isu di repositori yang menjelaskan rencana anda
+- Terjemahkan berkas dengan tipe `.md` di cabang anda. Gunakan format [CommonMark](https://commonmark.org), dengan beberapa penambahan. Anda mungkin bisa mengabaikan terma indeks (yang ditandai dengan tanda kurung ganda dan sintaks `{{index ...}}`) dari terjemahan anda, karena itu hanya relevan untuk keluaran cetak.
+- Publikasikan secara daring atau minta saya untuk menampungnya.
 
- - Create an issue on the repository describing your plan to translate.
-
- - Translate the `.md` files in your fork. These are
-   [CommonMark](https://commonmark.org/) formatted, with a few
-   extensions. You may consider omitting the index terms (indicated
-   with double parentheses and `{{index ...}}` syntax) from your
-   translation, since that's mostly relevant for print output.
-
- - Publish somewhere online or ask me to host the result.
-
-Doing this in public, and creating an issue that links to your work,
-helps avoid wasted effort, where multiple people start a translation
-to the same language (and possibly never finish it). (Since
-translations have to retain the license, it is okay to pick up someone
-else's translation and continue it, even when they have vanished from
-the internet.)
+Jika anda melakukan ini di publik, dan membuat isu yang bertaut dengan pekerjaan anda, akan membantu mencegah kerja ganda, dimana beberapa orang memulai terjemahan dalam bahasa yang sama (dan mungkin tidak menyelesaikannya). (Karena terjemahan harus mempertahankan lisensinya, anda boleh mengambil terjemahan orang lain dan meneruskan usahanya, bahkan jika sumber aslinya sudah tidak ada di internet.)
