@@ -417,7 +417,7 @@ the sine function useful for modeling a wavy motion.
 {{index pi}}
 
 To avoid a situation where all coins move up and down synchronously,
-the starting phase of each coin is randomized. The _((phase))_ of
+the starting phase of each coin is randomized. The period of
 `Math.sin`'s wave, the width of a wave it produces, is 2π. We multiply
 the value returned by `Math.random` by that number to give the coin a
 random starting position on the wave.
@@ -847,13 +847,13 @@ and a size) touches a grid element of the given type.
 
 ```{includeCode: true}
 Level.prototype.touches = function(pos, size, type) {
-  var xStart = Math.floor(pos.x);
-  var xEnd = Math.ceil(pos.x + size.x);
-  var yStart = Math.floor(pos.y);
-  var yEnd = Math.ceil(pos.y + size.y);
+  let xStart = Math.floor(pos.x);
+  let xEnd = Math.ceil(pos.x + size.x);
+  let yStart = Math.floor(pos.y);
+  let yEnd = Math.ceil(pos.y + size.y);
 
-  for (var y = yStart; y < yEnd; y++) {
-    for (var x = xStart; x < xEnd; x++) {
+  for (let y = yStart; y < yEnd; y++) {
+    for (let x = xStart; x < xEnd; x++) {
       let isOutside = x < 0 || x >= this.width ||
                       y < 0 || y >= this.height;
       let here = isOutside ? "wall" : this.rows[y][x];
